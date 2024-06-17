@@ -7,6 +7,7 @@
     <string name="dynamic">Dynamisk</string>
     <string name="green">Grøn</string>
     <string name="pink">Lyserød</string>
+    <string name="matrix">Matrix-AMOLED</string>
     <string name="srcery">Srcery</string>
     <string name="blue">Blå</string>
     <string name="dracula">Dracula</string>
@@ -68,8 +69,6 @@
     <string name="copy">Kopierede valgte tekst</string>
     <string name="hide_letters">Skjul bogstaer</string>
     <string name="hide_symbols">Skjul symboler</string>
-    <string name="save">Gem</string>
-    <string name="key_borders">Kanter</string>
     <string name="spacebar_multitaps">Multi-tryk på mellemrumstasten</string>
     <string name="done">Færdig</string>
     <string name="backdrop">Tastaturbaggrund</string>

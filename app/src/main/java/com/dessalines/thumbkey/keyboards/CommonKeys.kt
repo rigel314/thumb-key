@@ -32,6 +32,46 @@ import com.dessalines.thumbkey.utils.SlideType
 import com.dessalines.thumbkey.utils.SwipeDirection
 import com.dessalines.thumbkey.utils.SwipeNWay
 
+val ABC_OR_NUMERIC_SWIPES =
+    mapOf(
+        SwipeDirection.TOP to
+            KeyC(
+                display = KeyDisplay.IconDisplay(Icons.Outlined.ContentCopy),
+                action = KeyAction.Copy,
+                color = ColorVariant.MUTED,
+            ),
+        SwipeDirection.TOP_LEFT to
+            KeyC(
+                display = KeyDisplay.IconDisplay(Icons.Outlined.SelectAll),
+                action = KeyAction.SelectAll,
+                color = ColorVariant.MUTED,
+            ),
+        SwipeDirection.TOP_RIGHT to
+            KeyC(
+                display = KeyDisplay.IconDisplay(Icons.Outlined.ContentCut),
+                action = KeyAction.Cut,
+                color = ColorVariant.MUTED,
+            ),
+        SwipeDirection.LEFT to
+            KeyC(
+                display = KeyDisplay.IconDisplay(Icons.AutoMirrored.Outlined.Undo),
+                action = KeyAction.Undo,
+                color = ColorVariant.MUTED,
+            ),
+        SwipeDirection.RIGHT to
+            KeyC(
+                display = KeyDisplay.IconDisplay(Icons.AutoMirrored.Outlined.Redo),
+                action = KeyAction.Redo,
+                color = ColorVariant.MUTED,
+            ),
+        SwipeDirection.BOTTOM to
+            KeyC(
+                display = KeyDisplay.IconDisplay(Icons.Outlined.ContentPaste),
+                action = KeyAction.Paste,
+                color = ColorVariant.MUTED,
+            ),
+    )
+
 val ABC_KEY_ITEM =
     KeyItemC(
         center =
@@ -41,6 +81,8 @@ val ABC_KEY_ITEM =
                 size = FontSizeVariant.LARGE,
                 color = ColorVariant.PRIMARY,
             ),
+        swipeType = SwipeNWay.EIGHT_WAY,
+        swipes = ABC_OR_NUMERIC_SWIPES,
         backgroundColor = ColorVariant.SURFACE_VARIANT,
     )
 
@@ -54,45 +96,7 @@ val NUMERIC_KEY_ITEM =
                 color = ColorVariant.SECONDARY,
             ),
         swipeType = SwipeNWay.EIGHT_WAY,
-        swipes =
-            mapOf(
-                SwipeDirection.TOP to
-                    KeyC(
-                        display = KeyDisplay.IconDisplay(Icons.Outlined.ContentCopy),
-                        action = KeyAction.Copy,
-                        color = ColorVariant.MUTED,
-                    ),
-                SwipeDirection.TOP_LEFT to
-                    KeyC(
-                        display = KeyDisplay.IconDisplay(Icons.Outlined.SelectAll),
-                        action = KeyAction.SelectAll,
-                        color = ColorVariant.MUTED,
-                    ),
-                SwipeDirection.TOP_RIGHT to
-                    KeyC(
-                        display = KeyDisplay.IconDisplay(Icons.Outlined.ContentCut),
-                        action = KeyAction.Cut,
-                        color = ColorVariant.MUTED,
-                    ),
-                SwipeDirection.LEFT to
-                    KeyC(
-                        display = KeyDisplay.IconDisplay(Icons.AutoMirrored.Outlined.Undo),
-                        action = KeyAction.Undo,
-                        color = ColorVariant.MUTED,
-                    ),
-                SwipeDirection.RIGHT to
-                    KeyC(
-                        display = KeyDisplay.IconDisplay(Icons.AutoMirrored.Outlined.Redo),
-                        action = KeyAction.Redo,
-                        color = ColorVariant.MUTED,
-                    ),
-                SwipeDirection.BOTTOM to
-                    KeyC(
-                        display = KeyDisplay.IconDisplay(Icons.Outlined.ContentPaste),
-                        action = KeyAction.Paste,
-                        color = ColorVariant.MUTED,
-                    ),
-            ),
+        swipes = ABC_OR_NUMERIC_SWIPES,
         backgroundColor = ColorVariant.SURFACE_VARIANT,
     )
 
@@ -186,6 +190,7 @@ val BACKSPACE_KEY_ITEM =
                     ),
             ),
         backgroundColor = ColorVariant.SURFACE_VARIANT,
+        longPress = KeyAction.DeleteWordBeforeCursor,
     )
 
 val SPACEBAR_KEY_ITEM =
@@ -199,28 +204,6 @@ val SPACEBAR_KEY_ITEM =
         slideType = SlideType.MOVE_CURSOR,
         swipes =
             mapOf(
-                SwipeDirection.TOP to
-                    KeyC(
-                        action =
-                            KeyAction.SendEvent(
-                                KeyEvent(
-                                    KeyEvent.ACTION_DOWN,
-                                    KeyEvent.KEYCODE_DPAD_UP,
-                                ),
-                            ),
-                        display = null,
-                    ),
-                SwipeDirection.BOTTOM to
-                    KeyC(
-                        action =
-                            KeyAction.SendEvent(
-                                KeyEvent(
-                                    KeyEvent.ACTION_DOWN,
-                                    KeyEvent.KEYCODE_DPAD_DOWN,
-                                ),
-                            ),
-                        display = null,
-                    ),
                 SwipeDirection.LEFT to
                     KeyC(
                         action =
@@ -329,6 +312,7 @@ val RETURN_KEY_ITEM =
                 color = ColorVariant.SECONDARY,
             ),
         backgroundColor = ColorVariant.SURFACE_VARIANT,
+        longPress = KeyAction.CommitText("\n"),
     )
 
 val SPACEBAR_TYPESPLIT_MIDDLE_KEY_ITEM =
@@ -590,3 +574,46 @@ val BACKSPACE_TYPESPLIT_SHIFTED_KEY_ITEM =
                     ),
             ),
     )
+
+val SPACEBAR_FRENCH_KEY_ITEM =
+    SPACEBAR_KEY_ITEM.copy(
+        nextTapActions =
+            listOf(
+                KeyAction.ReplaceLastText(", ", trimCount = 1),
+                KeyAction.ReplaceLastText(". "),
+                KeyAction.ReplaceLastText(" ? "),
+                KeyAction.ReplaceLastText(" ! ", trimCount = 3),
+                KeyAction.ReplaceLastText(" : ", trimCount = 3),
+                KeyAction.ReplaceLastText(" ; ", trimCount = 3),
+            ),
+    )
+
+val SPACEBAR_FRENCH_SKINNY_KEY_ITEM = SPACEBAR_FRENCH_KEY_ITEM.copy(widthMultiplier = 1)
+
+val SPACEBAR_FRENCH_TYPESPLIT_MIDDLE_KEY_ITEM =
+    SPACEBAR_TYPESPLIT_MIDDLE_KEY_ITEM.copy(
+        nextTapActions =
+            listOf(
+                KeyAction.ReplaceLastText(", ", trimCount = 1),
+                KeyAction.ReplaceLastText(". "),
+                KeyAction.ReplaceLastText(" ? "),
+                KeyAction.ReplaceLastText(" ! ", trimCount = 3),
+                KeyAction.ReplaceLastText(" : ", trimCount = 3),
+                KeyAction.ReplaceLastText(" ; ", trimCount = 3),
+            ),
+    )
+
+val SPACEBAR_FRENCH_TYPESPLIT_BOTTOM_KEY_ITEM =
+    SPACEBAR_TYPESPLIT_BOTTOM_KEY_ITEM.copy(
+        nextTapActions =
+            listOf(
+                KeyAction.ReplaceLastText(", ", trimCount = 1),
+                KeyAction.ReplaceLastText(". "),
+                KeyAction.ReplaceLastText(" ? "),
+                KeyAction.ReplaceLastText(" ! ", trimCount = 3),
+                KeyAction.ReplaceLastText(" : ", trimCount = 3),
+                KeyAction.ReplaceLastText(" ; ", trimCount = 3),
+            ),
+    )
+
+val SPACEBAR_ZERO_KEY_ITEM = SPACEBAR_KEY_ITEM.copy(longPress = KeyAction.CommitText("0"))

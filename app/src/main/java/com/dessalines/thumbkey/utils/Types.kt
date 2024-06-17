@@ -1,9 +1,8 @@
 package com.dessalines.thumbkey.utils
 
 import android.view.KeyEvent
-import androidx.compose.runtime.Composable
+import androidx.annotation.StringRes
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.res.stringResource
 import com.dessalines.thumbkey.R
 
 data class KeyboardDefinitionModes(
@@ -48,12 +47,17 @@ data class KeyItemC(
     val backgroundColor: ColorVariant = ColorVariant.SURFACE,
     val swipeType: SwipeNWay = SwipeNWay.EIGHT_WAY,
     val slideType: SlideType = SlideType.NONE,
+    val longPress: KeyAction? = null,
 )
 
 data class KeyC(
-    val display: KeyDisplay?,
-    val capsModeDisplay: KeyDisplay? = null,
     val action: KeyAction,
+    val display: KeyDisplay? =
+        when (action) {
+            is KeyAction.CommitText -> KeyDisplay.TextDisplay(action.text)
+            else -> null
+        },
+    val capsModeDisplay: KeyDisplay? = null,
     val color: ColorVariant = ColorVariant.SECONDARY,
     val size: FontSizeVariant = FontSizeVariant.SMALL,
 )
@@ -110,17 +114,13 @@ sealed class KeyAction {
     data object SwitchIMEVoice : KeyAction()
 }
 
-enum class CursorAccelerationMode(private val stringId: Int) {
+enum class CursorAccelerationMode(
+    @StringRes val resId: Int,
+) {
     LINEAR(R.string.slide_cursor_acceleration_linear),
     QUADRATIC(R.string.slide_cursor_acceleration_quadratic),
     THRESHOLD(R.string.slide_cursor_acceleration_threshold_acceleration),
     CONSTANT(R.string.slide_cursor_acceleration_constant),
-    ;
-
-    @Composable
-    fun title(): String {
-        return stringResource(this.stringId)
-    }
 }
 
 enum class KeyboardMode {
@@ -155,19 +155,17 @@ enum class FontSizeVariant {
     SMALLEST,
 }
 
-enum class ThemeMode(private val stringId: Int) {
+enum class ThemeMode(
+    @StringRes val resId: Int,
+) {
     System(R.string.system),
     Light(R.string.light),
     Dark(R.string.dark),
-    ;
-
-    @Composable
-    fun title(): String {
-        return stringResource(this.stringId)
-    }
 }
 
-enum class ThemeColor(private val stringId: Int) {
+enum class ThemeColor(
+    @StringRes val resId: Int,
+) {
     Dynamic(R.string.dynamic),
     Green(R.string.green),
     Pink(R.string.pink),
@@ -178,24 +176,15 @@ enum class ThemeColor(private val stringId: Int) {
     HighContrast(R.string.high_contrast),
     HighContrastColorful(R.string.high_contrast_colorful),
     Ancom(R.string.ancom),
-    ;
-
-    @Composable
-    fun title(): String {
-        return stringResource(this.stringId)
-    }
+    Matrix(R.string.matrix),
 }
 
-enum class KeyboardPosition(private val stringId: Int) {
+enum class KeyboardPosition(
+    @StringRes val resId: Int,
+) {
     Center(R.string.center),
     Right(R.string.right),
     Left(R.string.left),
-    ;
-
-    @Composable
-    fun title(): String {
-        return stringResource(this.stringId)
-    }
 }
 
 enum class SwipeNWay {
@@ -234,4 +223,16 @@ data class Selection(
     fun right(index: Int) {
         end += index
     }
+}
+
+enum class CircularDirection {
+    Clockwise,
+    Counterclockwise,
+}
+
+enum class CircularDragAction(
+    @StringRes val resId: Int,
+) {
+    OppositeCase(R.string.send_oppsite_case),
+    Numeric(R.string.send_numeric),
 }
