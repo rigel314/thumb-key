@@ -142,6 +142,12 @@ val KB_FR_THUMBKEY_V2_MAIN =
                         ),
                     swipes =
                         mapOf(
+                            SwipeDirection.LEFT to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("-"),
+                                    action = KeyAction.CommitText("-"),
+                                    color = ColorVariant.MUTED,
+                                ),
                             SwipeDirection.RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("v"),
@@ -215,6 +221,7 @@ val KB_FR_THUMBKEY_V2_MAIN =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleShiftMode(true),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_RIGHT to
@@ -228,6 +235,11 @@ val KB_FR_THUMBKEY_V2_MAIN =
                                     display = KeyDisplay.TextDisplay("â"),
                                     action = KeyAction.CommitText("â"),
                                     color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.BOTTOM to
+                                KeyC(
+                                    action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                 ),
                             SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
@@ -498,6 +510,12 @@ val KB_FR_THUMBKEY_V2_SHIFTED =
                         ),
                     swipes =
                         mapOf(
+                            SwipeDirection.LEFT to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("-"),
+                                    action = KeyAction.CommitText("-"),
+                                    color = ColorVariant.MUTED,
+                                ),
                             SwipeDirection.RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("V"),
@@ -571,6 +589,7 @@ val KB_FR_THUMBKEY_V2_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
                                     action = KeyAction.ToggleCapsLock,
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_RIGHT to
@@ -595,6 +614,7 @@ val KB_FR_THUMBKEY_V2_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                                     action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.BOTTOM_LEFT to
@@ -735,7 +755,7 @@ val KB_FR_THUMBKEY_V2_SHIFTED =
 
 val KB_FR_THUMBKEY_V2: KeyboardDefinition =
     KeyboardDefinition(
-        title = "français v2 thumb-key",
+        title = "français thumb-key v2",
         modes =
             KeyboardDefinitionModes(
                 main = KB_FR_THUMBKEY_V2_MAIN,

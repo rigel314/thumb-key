@@ -22,7 +22,7 @@ import com.dessalines.thumbkey.utils.autoCapitalizeI
 import com.dessalines.thumbkey.utils.autoCapitalizeIApostrophe
 
 // Adds more punctuation options to the main screen to reduce switches to the numeric keyboard
-val KB_EN_THUMBKEY_PROGRAMMER_MAIN =
+val KB_EN_THUMBKEY_PROGRAMMING_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -260,12 +260,14 @@ val KB_EN_THUMBKEY_PROGRAMMER_MAIN =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleShiftMode(true),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                                     action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.RIGHT to
@@ -416,13 +418,13 @@ val KB_EN_THUMBKEY_PROGRAMMER_MAIN =
                 BACKSPACE_KEY_ITEM,
             ),
             listOf(
-                SPACEBAR_PROGRAMMER_KEY_ITEM,
+                SPACEBAR_PROGRAMMING_KEY_ITEM,
                 RETURN_KEY_ITEM,
             ),
         ),
     )
 
-val KB_EN_THUMBKEY_PROGRAMMER_SHIFTED =
+val KB_EN_THUMBKEY_PROGRAMMING_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -660,6 +662,7 @@ val KB_EN_THUMBKEY_PROGRAMMER_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                                     action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP to
@@ -667,6 +670,7 @@ val KB_EN_THUMBKEY_PROGRAMMER_SHIFTED =
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
                                     capsModeDisplay = KeyDisplay.IconDisplay(Icons.Outlined.Copyright),
                                     action = KeyAction.ToggleCapsLock,
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.RIGHT to
@@ -830,19 +834,19 @@ val KB_EN_THUMBKEY_PROGRAMMER_SHIFTED =
                 BACKSPACE_KEY_ITEM,
             ),
             listOf(
-                SPACEBAR_PROGRAMMER_KEY_ITEM,
+                SPACEBAR_PROGRAMMING_KEY_ITEM,
                 RETURN_KEY_ITEM,
             ),
         ),
     )
 
-val KB_EN_THUMBKEY_PROGRAMMER: KeyboardDefinition =
+val KB_EN_THUMBKEY_PROGRAMMING: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english programmer thumb-key",
+        title = "english thumb-key programming",
         modes =
             KeyboardDefinitionModes(
-                main = KB_EN_THUMBKEY_PROGRAMMER_MAIN,
-                shifted = KB_EN_THUMBKEY_PROGRAMMER_SHIFTED,
+                main = KB_EN_THUMBKEY_PROGRAMMING_MAIN,
+                shifted = KB_EN_THUMBKEY_PROGRAMMING_SHIFTED,
                 numeric = NUMERIC_KEYBOARD,
             ),
         settings =

@@ -16,7 +16,7 @@ import com.dessalines.thumbkey.utils.KeyboardDefinition
 import com.dessalines.thumbkey.utils.KeyboardDefinitionModes
 import com.dessalines.thumbkey.utils.SwipeDirection
 
-val KB_CZ_PROG_MAIN =
+val KB_CZ_MESSAGEASE_PROGRAMMING_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -323,6 +323,7 @@ val KB_CZ_PROG_MAIN =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleShiftMode(true),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_RIGHT to
@@ -342,6 +343,11 @@ val KB_CZ_PROG_MAIN =
                                     display = KeyDisplay.TextDisplay(")"),
                                     action = KeyAction.CommitText(")"),
                                     color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.BOTTOM to
+                                KeyC(
+                                    action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                 ),
                             SwipeDirection.BOTTOM_LEFT to
                                 KeyC(
@@ -519,7 +525,7 @@ val KB_CZ_PROG_MAIN =
         ),
     )
 
-val KB_CZ_PROG_SHIFTED =
+val KB_CZ_MESSAGEASE_PROGRAMMING_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -827,12 +833,14 @@ val KB_CZ_PROG_SHIFTED =
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
                                     capsModeDisplay = KeyDisplay.IconDisplay(Icons.Outlined.Copyright),
                                     action = KeyAction.ToggleCapsLock,
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                                     action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_RIGHT to
@@ -1023,13 +1031,13 @@ val KB_CZ_PROG_SHIFTED =
         ),
     )
 
-val KB_CZ_PROG: KeyboardDefinition =
+val KB_CZ_MESSAGEASE_PROGRAMMING: KeyboardDefinition =
     KeyboardDefinition(
-        title = "čeština programming messagease",
+        title = "čeština messagease programming",
         modes =
             KeyboardDefinitionModes(
-                main = KB_CZ_PROG_MAIN,
-                shifted = KB_CZ_PROG_SHIFTED,
-                numeric = NUMERIC_KEYBOARD,
+                main = KB_CZ_MESSAGEASE_PROGRAMMING_MAIN,
+                shifted = KB_CZ_MESSAGEASE_PROGRAMMING_SHIFTED,
+                numeric = KB_EN_MESSAGEASE_NUMERIC,
             ),
     )

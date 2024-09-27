@@ -60,6 +60,7 @@ import com.dessalines.thumbkey.utils.KeyboardDefinitionSettings
 import com.dessalines.thumbkey.utils.Selection
 import com.dessalines.thumbkey.utils.SlideType
 import com.dessalines.thumbkey.utils.SwipeDirection
+import com.dessalines.thumbkey.utils.SwipeNWay
 import com.dessalines.thumbkey.utils.buildTapActions
 import com.dessalines.thumbkey.utils.circularDirection
 import com.dessalines.thumbkey.utils.colorVariantToColor
@@ -80,6 +81,10 @@ import kotlin.math.min
 @Composable
 fun KeyboardKey(
     key: KeyItemC,
+    // Hidden background key to detect swipes for. When a swipe isn't captured by the key, the ghost
+    // key will attempt to capture it instead. This is derived automatically from the keyboard
+    // layout, and should not be set directly in the keyboard definition.
+    ghostKey: KeyItemC? = null,
     lastAction: MutableState<KeyAction?>,
     animationHelperSpeed: Int,
     animationSpeed: Int,
@@ -120,7 +125,7 @@ fun KeyboardKey(
 ) {
     // Necessary for swipe settings to get updated correctly
     val id =
-        key.toString() + animationHelperSpeed + animationSpeed + autoCapitalize +
+        key.toString() + ghostKey.toString() + animationHelperSpeed + animationSpeed + autoCapitalize +
             vibrateOnTap + soundOnTap + legendHeight + legendWidth + minSwipeLength + slideSensitivity +
             slideEnabled + slideCursorMovementMode + slideSpacebarDeadzoneEnabled +
             slideBackspaceDeadzoneEnabled + dragReturnEnabled + circularDragEnabled +
@@ -197,8 +202,7 @@ fun KeyboardKey(
                 } else {
                     (Modifier)
                 },
-            )
-            .background(color = backgroundColor)
+            ).background(color = backgroundColor)
             // Note: pointerInput has a delay when switching keyboards, so you must use this
             .combinedClickable(
                 interactionSource = interactionSource,
@@ -393,7 +397,8 @@ fun KeyboardKey(
                             if (!selection.active) {
                                 timeOfLastAccelerationInput = System.currentTimeMillis()
                                 // Activate selection, first detection is large enough to preserve swipe actions.
-                                if (slideBackspaceDeadzoneEnabled && (abs(offsetX) > slideOffsetTrigger) ||
+                                if (slideBackspaceDeadzoneEnabled &&
+                                    (abs(offsetX) > slideOffsetTrigger) ||
                                     !slideBackspaceDeadzoneEnabled
                                 ) {
                                     // reset offsetX, do not reset offsetY when sliding, it will break selecting
@@ -462,15 +467,23 @@ fun KeyboardKey(
                                             if (dragReturnEnabled) {
                                                 val swipeDirection =
                                                     swipeDirection(maxOffset.x, maxOffset.y, minSwipeLength, key.swipeType)
-                                                oppositeCaseKey?.swipes?.get(swipeDirection)?.action
+                                                key.swipes?.get(swipeDirection)?.swipeReturnAction
+                                                    ?: oppositeCaseKey?.swipes?.get(swipeDirection)?.action
                                             } else {
                                                 null
                                             }
                                         )
                                     } else {
                                         val swipeDirection =
-                                            swipeDirection(offsetX, offsetY, minSwipeLength, key.swipeType)
-                                        key.swipes?.get(swipeDirection)?.action
+                                            swipeDirection(
+                                                offsetX,
+                                                offsetY,
+                                                minSwipeLength,
+                                                if (ghostKey == null) key.swipeType else SwipeNWay.EIGHT_WAY,
+                                            )
+                                        key.swipes?.get(swipeDirection)?.action ?: (
+                                            ghostKey?.swipes?.get(swipeDirection)?.action
+                                        )
                                     }
                                 ) ?: key.center.action
 
@@ -762,7 +775,10 @@ fun KeyText(
     val color = colorVariantToColor(colorVariant = key.color)
     val isUpperCase =
         when (key.display) {
-            is KeyDisplay.TextDisplay -> key.display.text.firstOrNull()?.isUpperCase() ?: false
+            is KeyDisplay.TextDisplay ->
+                key.display.text
+                    .firstOrNull()
+                    ?.isUpperCase() ?: false
             else -> {
                 false
             }

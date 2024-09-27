@@ -12,7 +12,7 @@ import com.dessalines.thumbkey.utils.KeyboardDefinitionModes
 import com.dessalines.thumbkey.utils.SwipeDirection
 import com.dessalines.thumbkey.utils.SwipeNWay
 
-val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
+val KB_PL_TYPESPLIT_SYMBOLS_V1_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -62,22 +62,25 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                     swipeType = SwipeNWay.FOUR_WAY_CROSS,
                     swipes =
                         mapOf(
+                            SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("\\"),
+                                    action = KeyAction.CommitText("\\"),
+                                ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("t"),
                                     action = KeyAction.CommitText("t"),
                                 ),
+                            SwipeDirection.LEFT to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("/"),
+                                    action = KeyAction.CommitText("/"),
+                                ),
                             SwipeDirection.RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("®"),
                                     action = KeyAction.CommitText("®"),
-                                    color = ColorVariant.MUTED,
-                                ),
-                            SwipeDirection.TOP to
-                                KeyC(
-                                    display = KeyDisplay.TextDisplay("¯\\_(ツ)_/¯"),
-                                    action = KeyAction.CommitText("¯\\_(ツ)_/¯"),
-                                    size = FontSizeVariant.SMALLEST,
                                     color = ColorVariant.MUTED,
                                 ),
                         ),
@@ -101,13 +104,20 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = null,
-                                    action = KeyAction.CommitText("y"),
+                                    display = KeyDisplay.TextDisplay("%"),
+                                    action = KeyAction.CommitText("%"),
+                                    color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("u"),
                                     action = KeyAction.CommitText("u"),
+                                ),
+                            SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("^"),
+                                    action = KeyAction.CommitText("^"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -138,6 +148,12 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("p"),
                                     action = KeyAction.CommitText("p"),
+                                ),
+                            SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("|"),
+                                    action = KeyAction.CommitText("|"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -172,6 +188,12 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                     action = KeyAction.CommitText("@"),
                                     color = ColorVariant.MUTED,
                                 ),
+                            SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("#"),
+                                    action = KeyAction.CommitText("#"),
+                                    color = ColorVariant.MUTED,
+                                ),
                         ),
                 ),
                 KeyItemC(
@@ -189,7 +211,6 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("`"),
                                     action = KeyAction.CommitText("`"),
-                                    color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
@@ -207,7 +228,6 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("~"),
                                     action = KeyAction.CommitText("~"),
-                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -228,20 +248,17 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                     display = KeyDisplay.TextDisplay("h"),
                                     action = KeyAction.CommitText("h"),
                                 ),
-                            SwipeDirection.LEFT to
-                                KeyC(
-                                    display = null,
-                                    action = KeyAction.CommitText("h"),
-                                ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("g"),
                                     action = KeyAction.CommitText("g"),
+                                    color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("f"),
                                     action = KeyAction.CommitText("f"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -262,11 +279,6 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                     action = KeyAction.CommitText(")"),
                                     color = ColorVariant.MUTED,
                                 ),
-                            SwipeDirection.LEFT to
-                                KeyC(
-                                    display = KeyDisplay.TextDisplay("j"),
-                                    action = KeyAction.CommitText("j"),
-                                ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("l"),
@@ -276,6 +288,12 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("ł"),
                                     action = KeyAction.CommitText("ł"),
+                                ),
+                            SwipeDirection.LEFT to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("j"),
+                                    action = KeyAction.CommitText("j"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -383,8 +401,9 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = null,
-                                    action = KeyAction.CommitText("ń"),
+                                    display = KeyDisplay.TextDisplay("&"),
+                                    action = KeyAction.CommitText("&"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -399,12 +418,6 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                     swipeType = SwipeNWay.EIGHT_WAY,
                     swipes =
                         mapOf(
-                            SwipeDirection.RIGHT to
-                                KeyC(
-                                    display = KeyDisplay.TextDisplay("?"),
-                                    action = KeyAction.CommitText("?"),
-                                    color = ColorVariant.MUTED,
-                                ),
                             SwipeDirection.LEFT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("!"),
@@ -421,6 +434,12 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay(";"),
                                     action = KeyAction.CommitText(";"),
+                                    color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.RIGHT to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("?"),
+                                    action = KeyAction.CommitText("?"),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_RIGHT to
@@ -446,7 +465,7 @@ val KB_PL_TYPESPLIT_SYMBOlS_MAIN =
         ),
     )
 
-val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
+val KB_PL_TYPESPLIT_SYMBOLS_V1_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -496,22 +515,25 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                     swipeType = SwipeNWay.FOUR_WAY_CROSS,
                     swipes =
                         mapOf(
+                            SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("\\"),
+                                    action = KeyAction.CommitText("\\"),
+                                ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("T"),
                                     action = KeyAction.CommitText("T"),
                                 ),
+                            SwipeDirection.LEFT to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("/"),
+                                    action = KeyAction.CommitText("/"),
+                                ),
                             SwipeDirection.RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("®"),
                                     action = KeyAction.CommitText("®"),
-                                    color = ColorVariant.MUTED,
-                                ),
-                            SwipeDirection.TOP to
-                                KeyC(
-                                    display = KeyDisplay.TextDisplay("¯\\\\\\_(ツ)_/¯"),
-                                    action = KeyAction.CommitText("¯\\\\\\_(ツ)_/¯"),
-                                    size = FontSizeVariant.SMALLEST,
                                     color = ColorVariant.MUTED,
                                 ),
                         ),
@@ -535,13 +557,20 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = null,
-                                    action = KeyAction.CommitText("Y"),
+                                    display = KeyDisplay.TextDisplay("%"),
+                                    action = KeyAction.CommitText("%"),
+                                    color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("U"),
                                     action = KeyAction.CommitText("U"),
+                                ),
+                            SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("^"),
+                                    action = KeyAction.CommitText("^"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -572,6 +601,12 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("P"),
                                     action = KeyAction.CommitText("P"),
+                                ),
+                            SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("|"),
+                                    action = KeyAction.CommitText("|"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -606,6 +641,12 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                     action = KeyAction.CommitText("@"),
                                     color = ColorVariant.MUTED,
                                 ),
+                            SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("#"),
+                                    action = KeyAction.CommitText("#"),
+                                    color = ColorVariant.MUTED,
+                                ),
                         ),
                 ),
                 KeyItemC(
@@ -616,14 +657,13 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
-                    swipeType = SwipeNWay.TWO_WAY_HORIZONTAL,
+                    swipeType = SwipeNWay.FOUR_WAY_CROSS,
                     swipes =
                         mapOf(
                             SwipeDirection.RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("`"),
                                     action = KeyAction.CommitText("`"),
-                                    color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
@@ -641,7 +681,6 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("~"),
                                     action = KeyAction.CommitText("~"),
-                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -662,20 +701,17 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                     display = KeyDisplay.TextDisplay("H"),
                                     action = KeyAction.CommitText("H"),
                                 ),
-                            SwipeDirection.LEFT to
-                                KeyC(
-                                    display = null,
-                                    action = KeyAction.CommitText("H"),
-                                ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("G"),
                                     action = KeyAction.CommitText("G"),
+                                    color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("F"),
                                     action = KeyAction.CommitText("F"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -696,11 +732,6 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                     action = KeyAction.CommitText(")"),
                                     color = ColorVariant.MUTED,
                                 ),
-                            SwipeDirection.LEFT to
-                                KeyC(
-                                    display = KeyDisplay.TextDisplay("J"),
-                                    action = KeyAction.CommitText("J"),
-                                ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("L"),
@@ -710,6 +741,12 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("Ł"),
                                     action = KeyAction.CommitText("Ł"),
+                                ),
+                            SwipeDirection.LEFT to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("J"),
+                                    action = KeyAction.CommitText("J"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -817,8 +854,9 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = null,
-                                    action = KeyAction.CommitText("Ń"),
+                                    display = KeyDisplay.TextDisplay("&"),
+                                    action = KeyAction.CommitText("&"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         ),
                 ),
@@ -833,12 +871,6 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                     swipeType = SwipeNWay.EIGHT_WAY,
                     swipes =
                         mapOf(
-                            SwipeDirection.RIGHT to
-                                KeyC(
-                                    display = KeyDisplay.TextDisplay("?"),
-                                    action = KeyAction.CommitText("?"),
-                                    color = ColorVariant.MUTED,
-                                ),
                             SwipeDirection.LEFT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("!"),
@@ -855,6 +887,12 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay(";"),
                                     action = KeyAction.CommitText(";"),
+                                    color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.RIGHT to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("?"),
+                                    action = KeyAction.CommitText("?"),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_RIGHT to
@@ -880,13 +918,13 @@ val KB_PL_TYPESPLIT_SYMBOLS_SHIFTED =
         ),
     )
 
-val KB_PL_TYPESPLIT_SYMBOLS: KeyboardDefinition =
+val KB_PL_TYPESPLIT_SYMBOLS_V1: KeyboardDefinition =
     KeyboardDefinition(
-        title = "polski symbols type-split",
+        title = "polski symbols type-split v1",
         modes =
             KeyboardDefinitionModes(
-                main = KB_PL_TYPESPLIT_SYMBOlS_MAIN,
-                shifted = KB_PL_TYPESPLIT_SYMBOLS_SHIFTED,
+                main = KB_PL_TYPESPLIT_SYMBOLS_V1_MAIN,
+                shifted = KB_PL_TYPESPLIT_SYMBOLS_V1_SHIFTED,
                 numeric = TYPESPLIT_NUMERIC_KEYBOARD,
             ),
     )

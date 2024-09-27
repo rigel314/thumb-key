@@ -274,6 +274,7 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_MAIN =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleShiftMode(true),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_LEFT to
@@ -293,6 +294,11 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_MAIN =
                                     display = KeyDisplay.TextDisplay(")"),
                                     action = KeyAction.CommitText(")"),
                                     color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.BOTTOM to
+                                KeyC(
+                                    action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                 ),
                             SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
@@ -319,7 +325,6 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
-//                swipeType = SwipeNWay.FOUR_WAY_DIAGONAL,
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_RIGHT to
@@ -341,8 +346,8 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_MAIN =
                                 ),
                             SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay(":"),
-                                    action = KeyAction.CommitText(":"),
+                                    display = KeyDisplay.TextDisplay("⇥"),
+                                    action = KeyAction.CommitText("\t"),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.LEFT to
@@ -724,6 +729,7 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                                     action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP to
@@ -731,6 +737,7 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_SHIFTED =
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
                                     capsModeDisplay = KeyDisplay.IconDisplay(Icons.Outlined.Copyright),
                                     action = KeyAction.ToggleCapsLock,
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_LEFT to
@@ -776,7 +783,6 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
-//                swipeType = SwipeNWay.FOUR_WAY_DIAGONAL,
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_RIGHT to
@@ -804,8 +810,8 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_SHIFTED =
                                 ),
                             SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay(":"),
-                                    action = KeyAction.CommitText(":"),
+                                    display = KeyDisplay.TextDisplay("⇥"),
+                                    action = KeyAction.CommitText("\t"),
                                     color = ColorVariant.MUTED,
                                 ),
                         ),
@@ -919,11 +925,11 @@ val KB_EN_NO_MESSAGEASE_SYMBOLS_SHIFTED =
 
 val KB_EN_NO_MESSAGEASE_SYMBOLS: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english norsk symbols messagease",
+        title = "english norsk messagease symbols",
         modes =
             KeyboardDefinitionModes(
                 main = KB_EN_NO_MESSAGEASE_SYMBOLS_MAIN,
                 shifted = KB_EN_NO_MESSAGEASE_SYMBOLS_SHIFTED,
-                numeric = NUMERIC_KEYBOARD,
+                numeric = KB_EN_MESSAGEASE_NUMERIC,
             ),
     )

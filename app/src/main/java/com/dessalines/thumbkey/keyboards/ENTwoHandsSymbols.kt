@@ -19,7 +19,7 @@ import com.dessalines.thumbkey.utils.SwipeNWay
 import com.dessalines.thumbkey.utils.autoCapitalizeI
 import com.dessalines.thumbkey.utils.autoCapitalizeIApostrophe
 
-val KB_EN_TWO_HANDS_SYMBOLS_MAIN =
+val KB_EN_SYMBOLS_TWO_HANDS_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -380,6 +380,7 @@ val KB_EN_TWO_HANDS_SYMBOLS_MAIN =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleShiftMode(true),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_LEFT to
@@ -399,6 +400,11 @@ val KB_EN_TWO_HANDS_SYMBOLS_MAIN =
                                     display = KeyDisplay.TextDisplay(")"),
                                     action = KeyAction.CommitText(")"),
                                     color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.BOTTOM to
+                                KeyC(
+                                    action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                 ),
                             SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
@@ -533,6 +539,7 @@ val KB_EN_TWO_HANDS_SYMBOLS_MAIN =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleShiftMode(true),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_LEFT to
@@ -552,6 +559,11 @@ val KB_EN_TWO_HANDS_SYMBOLS_MAIN =
                                     display = KeyDisplay.TextDisplay(")"),
                                     action = KeyAction.CommitText(")"),
                                     color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.BOTTOM to
+                                KeyC(
+                                    action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                 ),
                             SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
@@ -863,7 +875,7 @@ val KB_EN_TWO_HANDS_SYMBOLS_MAIN =
         ),
     )
 
-val KB_EN_TWO_HANDS_SYMBOLS_SHIFTED =
+val KB_EN_SYMBOLS_TWO_HANDS_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -1225,12 +1237,14 @@ val KB_EN_TWO_HANDS_SYMBOLS_SHIFTED =
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
                                     capsModeDisplay = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleCapsLock,
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                                     action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_LEFT to
@@ -1385,12 +1399,14 @@ val KB_EN_TWO_HANDS_SYMBOLS_SHIFTED =
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
                                     capsModeDisplay = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleCapsLock,
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.BOTTOM to
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                                     action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP_LEFT to
@@ -1721,13 +1737,13 @@ val KB_EN_TWO_HANDS_SYMBOLS_SHIFTED =
         ),
     )
 
-val KB_EN_TWO_HANDS_SYMBOLS: KeyboardDefinition =
+val KB_EN_SYMBOLS_TWO_HANDS: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english two-hands symbols",
+        title = "english symbols two-hands",
         modes =
             KeyboardDefinitionModes(
-                main = KB_EN_TWO_HANDS_SYMBOLS_MAIN,
-                shifted = KB_EN_TWO_HANDS_SYMBOLS_SHIFTED,
+                main = KB_EN_SYMBOLS_TWO_HANDS_MAIN,
+                shifted = KB_EN_SYMBOLS_TWO_HANDS_SHIFTED,
                 numeric = TWO_HANDS_NUMERIC_KEYBOARD,
             ),
         settings =

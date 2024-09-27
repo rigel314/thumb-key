@@ -17,7 +17,7 @@ import com.dessalines.thumbkey.utils.KeyboardDefinitionModes
 import com.dessalines.thumbkey.utils.SwipeDirection
 import com.dessalines.thumbkey.utils.SwipeNWay
 
-val KB_EOENDE_THUMBKEY_MAIN =
+val KB_EO_EN_DE_THUMBKEY_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -213,7 +213,13 @@ val KB_EOENDE_THUMBKEY_MAIN =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
                                     action = KeyAction.ToggleShiftMode(true),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.BOTTOM to
+                                KeyC(
+                                    action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                 ),
                         ),
                 ),
@@ -322,7 +328,7 @@ val KB_EOENDE_THUMBKEY_MAIN =
         ),
     )
 
-val KB_EOENDE_THUMBKEY_SHIFTED =
+val KB_EO_EN_DE_THUMBKEY_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -518,6 +524,7 @@ val KB_EOENDE_THUMBKEY_SHIFTED =
                                 KeyC(
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                                     action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                     color = ColorVariant.MUTED,
                                 ),
                             SwipeDirection.TOP to
@@ -525,6 +532,7 @@ val KB_EOENDE_THUMBKEY_SHIFTED =
                                     display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
                                     capsModeDisplay = KeyDisplay.IconDisplay(Icons.Outlined.Copyright),
                                     action = KeyAction.ToggleCapsLock,
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
                                 ),
                         ),
@@ -634,13 +642,13 @@ val KB_EOENDE_THUMBKEY_SHIFTED =
         ),
     )
 
-val KB_EOENDE_THUMBKEY: KeyboardDefinition =
+val KB_EO_EN_DE_THUMBKEY: KeyboardDefinition =
     KeyboardDefinition(
         title = "esperanto english deutsch thumb-key",
         modes =
             KeyboardDefinitionModes(
-                main = KB_EOENDE_THUMBKEY_MAIN,
-                shifted = KB_EOENDE_THUMBKEY_SHIFTED,
+                main = KB_EO_EN_DE_THUMBKEY_MAIN,
+                shifted = KB_EO_EN_DE_THUMBKEY_SHIFTED,
                 numeric = NUMERIC_KEYBOARD,
             ),
     )

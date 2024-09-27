@@ -12,15 +12,15 @@ import com.dessalines.thumbkey.utils.KeyboardDefinitionModes
 import com.dessalines.thumbkey.utils.SwipeDirection
 import com.dessalines.thumbkey.utils.SwipeNWay
 
-val KB_JA_THUMBKEY_KATAKANA_MAIN =
+val KB_JA_HIRAGANA_THUMBKEY_MAIN =
     KeyboardC(
         listOf(
             listOf(
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("マ"),
-                            action = KeyAction.CommitText("マ"),
+                            display = KeyDisplay.TextDisplay("ま"),
+                            action = KeyAction.CommitText("ま"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -29,31 +29,31 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ミ"),
-                                    action = KeyAction.CommitText("ミ"),
+                                    display = KeyDisplay.TextDisplay("み"),
+                                    action = KeyAction.CommitText("み"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ム"),
-                                    action = KeyAction.CommitText("ム"),
+                                    display = KeyDisplay.TextDisplay("む"),
+                                    action = KeyAction.CommitText("む"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("メ"),
-                                    action = KeyAction.CommitText("メ"),
+                                    display = KeyDisplay.TextDisplay("め"),
+                                    action = KeyAction.CommitText("め"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("モ"),
-                                    action = KeyAction.CommitText("モ"),
+                                    display = KeyDisplay.TextDisplay("も"),
+                                    action = KeyAction.CommitText("も"),
                                 ),
                         ),
                 ),
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ハ"),
-                            action = KeyAction.CommitText("ハ"),
+                            display = KeyDisplay.TextDisplay("は"),
+                            action = KeyAction.CommitText("は"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -62,31 +62,31 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ヒ"),
-                                    action = KeyAction.CommitText("ヒ"),
+                                    display = KeyDisplay.TextDisplay("ひ"),
+                                    action = KeyAction.CommitText("ひ"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("フ"),
-                                    action = KeyAction.CommitText("フ"),
+                                    display = KeyDisplay.TextDisplay("ふ"),
+                                    action = KeyAction.CommitText("ふ"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ヘ"),
-                                    action = KeyAction.CommitText("ヘ"),
+                                    display = KeyDisplay.TextDisplay("へ"),
+                                    action = KeyAction.CommitText("へ"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ホ"),
-                                    action = KeyAction.CommitText("ホ"),
+                                    display = KeyDisplay.TextDisplay("ほ"),
+                                    action = KeyAction.CommitText("ほ"),
                                 ),
                         ),
                 ),
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("サ"),
-                            action = KeyAction.CommitText("サ"),
+                            display = KeyDisplay.TextDisplay("さ"),
+                            action = KeyAction.CommitText("さ"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -95,23 +95,23 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("シ"),
-                                    action = KeyAction.CommitText("シ"),
+                                    display = KeyDisplay.TextDisplay("し"),
+                                    action = KeyAction.CommitText("し"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ス"),
-                                    action = KeyAction.CommitText("ス"),
+                                    display = KeyDisplay.TextDisplay("す"),
+                                    action = KeyAction.CommitText("す"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("セ"),
-                                    action = KeyAction.CommitText("セ"),
+                                    display = KeyDisplay.TextDisplay("せ"),
+                                    action = KeyAction.CommitText("せ"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ソ"),
-                                    action = KeyAction.CommitText("ソ"),
+                                    display = KeyDisplay.TextDisplay("そ"),
+                                    action = KeyAction.CommitText("そ"),
                                 ),
                         ),
                 ),
@@ -121,8 +121,8 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ヤ"),
-                            action = KeyAction.CommitText("ヤ"),
+                            display = KeyDisplay.TextDisplay("や"),
+                            action = KeyAction.CommitText("や"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -131,21 +131,21 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ユ"),
-                                    action = KeyAction.CommitText("ユ"),
+                                    display = KeyDisplay.TextDisplay("ゆ"),
+                                    action = KeyAction.CommitText("ゆ"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ヨ"),
-                                    action = KeyAction.CommitText("ヨ"),
+                                    display = KeyDisplay.TextDisplay("よ"),
+                                    action = KeyAction.CommitText("よ"),
                                 ),
                         ),
                 ),
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ナ"),
-                            action = KeyAction.CommitText("ナ"),
+                            display = KeyDisplay.TextDisplay("な"),
+                            action = KeyAction.CommitText("な"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -154,31 +154,31 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ニ"),
-                                    action = KeyAction.CommitText("ニ"),
+                                    display = KeyDisplay.TextDisplay("に"),
+                                    action = KeyAction.CommitText("に"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ヌ"),
-                                    action = KeyAction.CommitText("ヌ"),
+                                    display = KeyDisplay.TextDisplay("ぬ"),
+                                    action = KeyAction.CommitText("ぬ"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ネ"),
-                                    action = KeyAction.CommitText("ネ"),
+                                    display = KeyDisplay.TextDisplay("ね"),
+                                    action = KeyAction.CommitText("ね"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ノ"),
-                                    action = KeyAction.CommitText("ノ"),
+                                    display = KeyDisplay.TextDisplay("の"),
+                                    action = KeyAction.CommitText("の"),
                                 ),
                         ),
                 ),
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("カ"),
-                            action = KeyAction.CommitText("カ"),
+                            display = KeyDisplay.TextDisplay("か"),
+                            action = KeyAction.CommitText("か"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -187,23 +187,23 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("キ"),
-                                    action = KeyAction.CommitText("キ"),
+                                    display = KeyDisplay.TextDisplay("き"),
+                                    action = KeyAction.CommitText("き"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ク"),
-                                    action = KeyAction.CommitText("ク"),
+                                    display = KeyDisplay.TextDisplay("く"),
+                                    action = KeyAction.CommitText("く"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ケ"),
-                                    action = KeyAction.CommitText("ケ"),
+                                    display = KeyDisplay.TextDisplay("け"),
+                                    action = KeyAction.CommitText("け"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("コ"),
-                                    action = KeyAction.CommitText("コ"),
+                                    display = KeyDisplay.TextDisplay("こ"),
+                                    action = KeyAction.CommitText("こ"),
                                 ),
                         ),
                 ),
@@ -213,8 +213,8 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ラ"),
-                            action = KeyAction.CommitText("ラ"),
+                            display = KeyDisplay.TextDisplay("ら"),
+                            action = KeyAction.CommitText("ら"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -223,31 +223,31 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("リ"),
-                                    action = KeyAction.CommitText("リ"),
+                                    display = KeyDisplay.TextDisplay("り"),
+                                    action = KeyAction.CommitText("り"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ル"),
-                                    action = KeyAction.CommitText("ル"),
+                                    display = KeyDisplay.TextDisplay("る"),
+                                    action = KeyAction.CommitText("る"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("レ"),
-                                    action = KeyAction.CommitText("レ"),
+                                    display = KeyDisplay.TextDisplay("れ"),
+                                    action = KeyAction.CommitText("れ"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ロ"),
-                                    action = KeyAction.CommitText("ロ"),
+                                    display = KeyDisplay.TextDisplay("ろ"),
+                                    action = KeyAction.CommitText("ろ"),
                                 ),
                         ),
                 ),
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("タ"),
-                            action = KeyAction.CommitText("タ"),
+                            display = KeyDisplay.TextDisplay("た"),
+                            action = KeyAction.CommitText("た"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -256,31 +256,31 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("チ"),
-                                    action = KeyAction.CommitText("チ"),
+                                    display = KeyDisplay.TextDisplay("ち"),
+                                    action = KeyAction.CommitText("ち"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ツ"),
-                                    action = KeyAction.CommitText("ツ"),
+                                    display = KeyDisplay.TextDisplay("つ"),
+                                    action = KeyAction.CommitText("つ"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("テ"),
-                                    action = KeyAction.CommitText("テ"),
+                                    display = KeyDisplay.TextDisplay("て"),
+                                    action = KeyAction.CommitText("て"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ト"),
-                                    action = KeyAction.CommitText("ト"),
+                                    display = KeyDisplay.TextDisplay("と"),
+                                    action = KeyAction.CommitText("と"),
                                 ),
                         ),
                 ),
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ア"),
-                            action = KeyAction.CommitText("ア"),
+                            display = KeyDisplay.TextDisplay("あ"),
+                            action = KeyAction.CommitText("あ"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -289,23 +289,23 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("イ"),
-                                    action = KeyAction.CommitText("イ"),
+                                    display = KeyDisplay.TextDisplay("い"),
+                                    action = KeyAction.CommitText("い"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ウ"),
-                                    action = KeyAction.CommitText("ウ"),
+                                    display = KeyDisplay.TextDisplay("う"),
+                                    action = KeyAction.CommitText("う"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("エ"),
-                                    action = KeyAction.CommitText("エ"),
+                                    display = KeyDisplay.TextDisplay("え"),
+                                    action = KeyAction.CommitText("え"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("オ"),
-                                    action = KeyAction.CommitText("オ"),
+                                    display = KeyDisplay.TextDisplay("お"),
+                                    action = KeyAction.CommitText("お"),
                                 ),
                         ),
                 ),
@@ -315,8 +315,8 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ワ"),
-                            action = KeyAction.CommitText("ワ"),
+                            display = KeyDisplay.TextDisplay("わ"),
+                            action = KeyAction.CommitText("わ"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -325,23 +325,23 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                         mapOf(
                             SwipeDirection.BOTTOM to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ヰ"),
-                                    action = KeyAction.CommitText("ヰ"),
+                                    display = KeyDisplay.TextDisplay("ゐ"),
+                                    action = KeyAction.CommitText("ゐ"),
                                 ),
                             SwipeDirection.LEFT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ン"),
-                                    action = KeyAction.CommitText("ン"),
+                                    display = KeyDisplay.TextDisplay("ん"),
+                                    action = KeyAction.CommitText("ん"),
                                 ),
                             SwipeDirection.TOP to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ヱ"),
-                                    action = KeyAction.CommitText("ヱ"),
+                                    display = KeyDisplay.TextDisplay("ゑ"),
+                                    action = KeyAction.CommitText("ゑ"),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
-                                    display = KeyDisplay.TextDisplay("ヲ"),
-                                    action = KeyAction.CommitText("ヲ"),
+                                    display = KeyDisplay.TextDisplay("を"),
+                                    action = KeyAction.CommitText("を"),
                                 ),
                         ),
                 ),
@@ -365,7 +365,13 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("？"),
                                     action = KeyAction.ToggleShiftMode(true),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(true),
                                     color = ColorVariant.MUTED,
+                                ),
+                            SwipeDirection.BOTTOM to
+                                KeyC(
+                                    action = KeyAction.ToggleShiftMode(false),
+                                    swipeReturnAction = KeyAction.ToggleCurrentWordCapitalization(false),
                                 ),
                             SwipeDirection.RIGHT to
                                 KeyC(
@@ -387,7 +393,7 @@ val KB_JA_THUMBKEY_KATAKANA_MAIN =
         ),
     )
 
-val KB_JA_THUMBKEY_KATAKANA_SHIFTED =
+val KB_JA_HIRAGANA_THUMBKEY_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -511,8 +517,8 @@ val KB_JA_THUMBKEY_KATAKANA_SHIFTED =
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ヿ"),
-                            action = KeyAction.CommitText("ヿ"),
+                            display = KeyDisplay.TextDisplay("ゟ"),
+                            action = KeyAction.CommitText("ゟ"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -529,8 +535,8 @@ val KB_JA_THUMBKEY_KATAKANA_SHIFTED =
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ヽ"),
-                            action = KeyAction.CommitText("ヽ"),
+                            display = KeyDisplay.TextDisplay("ゝ"),
+                            action = KeyAction.CommitText("ゝ"),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
@@ -564,7 +570,7 @@ val KB_JA_THUMBKEY_KATAKANA_SHIFTED =
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("ア"),
+                            display = KeyDisplay.TextDisplay("あ"),
                             action = KeyAction.ToggleShiftMode(false),
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.MUTED,
@@ -583,13 +589,13 @@ val KB_JA_THUMBKEY_KATAKANA_SHIFTED =
         ),
     )
 
-val KB_JA_THUMBKEY_KATAKANA: KeyboardDefinition =
+val KB_JA_HIRAGANA_THUMBKEY: KeyboardDefinition =
     KeyboardDefinition(
-        title = "japanese katakana thumb-key",
+        title = "japanese hiragana thumb-key",
         modes =
             KeyboardDefinitionModes(
-                main = KB_JA_THUMBKEY_KATAKANA_MAIN,
-                shifted = KB_JA_THUMBKEY_KATAKANA_SHIFTED,
+                main = KB_JA_HIRAGANA_THUMBKEY_MAIN,
+                shifted = KB_JA_HIRAGANA_THUMBKEY_SHIFTED,
                 numeric = NUMERIC_KEYBOARD,
             ),
     )

@@ -1,12 +1,291 @@
+# Thumb-Key 3.4.12 (2024-09-24)
+
+## What's Changed in 3.4.12
+
+- Add compose keys (caron, breve), quote sign toggle by @mpice-mn in [#1086](https://github.com/dessalines/thumb-key/pull/1086)
+- Add renovate more often. by @dessalines in [#1084](https://github.com/dessalines/thumb-key/pull/1084)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.11...3.4.12
+
+# Thumb-Key 3.4.11 (2024-09-22)
+
+## What's Changed in 3.4.11
+
+- Upping version. by @dessalines
+- Add QWERTY-Columnar layouts by @SED4906 in [#1075](https://github.com/dessalines/thumb-key/pull/1075)
+- Add glagolitic layout by @adiee5 in [#1074](https://github.com/dessalines/thumb-key/pull/1074)
+
+## New Contributors
+
+- @SED4906 made their first contribution in [#1075](https://github.com/dessalines/thumb-key/pull/1075)
+- @adiee5 made their first contribution in [#1074](https://github.com/dessalines/thumb-key/pull/1074)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.10...3.4.11
+
+# Thumb-Key 3.4.10 (2024-09-20)
+
+## What's Changed in 3.4.10
+
+- Upping version. by @dessalines
+- Add spaces after toki pona words. by @dessalines in [#1072](https://github.com/dessalines/thumb-key/pull/1072)
+- Add old polish type-split layouts back by @kkard2 in [#1070](https://github.com/dessalines/thumb-key/pull/1070)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.9...3.4.10
+
+# Thumb-Key 3.4.9 (2024-09-16)
+
+## What's Changed in 3.4.9
+
+- Upping version. by @dessalines
+- English TypeSplit Short layout by @ChrisLHall in [#1069](https://github.com/dessalines/thumb-key/pull/1069)
+- Update Danish translation by @Limfjorden in [#1067](https://github.com/dessalines/thumb-key/pull/1067)
+
+## New Contributors
+
+- @ChrisLHall made their first contribution in [#1069](https://github.com/dessalines/thumb-key/pull/1069)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.8...3.4.9
+
+# Thumb-Key 3.4.8 (2024-09-14)
+
+## What's Changed in 3.4.8
+
+- Upping version. by @dessalines
+- Change duplicate : to tab in ENNOMessagEaseSymbols by @afreakk in [#1066](https://github.com/dessalines/thumb-key/pull/1066)
+- update to new best layout by @lrvideckis in [#1063](https://github.com/dessalines/thumb-key/pull/1063)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.7...3.4.8
+
+# Thumb-Key 3.4.7 (2024-09-12)
+
+## What's Changed in 3.4.7
+
+- Upping version. by @dessalines
+- Rsinoa layout by @lrvideckis in [#1057](https://github.com/dessalines/thumb-key/pull/1057)
+- Adding CONTRIBUTING.md by @dessalines in [#1062](https://github.com/dessalines/thumb-key/pull/1062)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.6...3.4.7
+
+# Thumb-Key 3.4.6 (2024-09-10)
+
+## What's Changed in 3.4.6
+
+- Upping version. by @dessalines
+- New Layout EN / DE / NL incl new Numerical Layout by @freekvdmeer in [#1045](https://github.com/dessalines/thumb-key/pull/1045)
+- Type split improvements by @h67ma in [#1054](https://github.com/dessalines/thumb-key/pull/1054)
+
+## New Contributors
+
+- @freekvdmeer made their first contribution in [#1045](https://github.com/dessalines/thumb-key/pull/1045)
+- @h67ma made their first contribution in [#1054](https://github.com/dessalines/thumb-key/pull/1054)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.5...3.4.6
+
+# Thumb-Key 3.4.5 (2024-09-02)
+
+## What's Changed in 3.4.5
+
+- Upping version. by @dessalines
+- Adding EN Thumbkey Words. by @dessalines in [#1039](https://github.com/dessalines/thumb-key/pull/1039)
+- Added ES thumb-key symbols layout by @DiegoLpVn in [#1035](https://github.com/dessalines/thumb-key/pull/1035)
+
+## New Contributors
+
+- @DiegoLpVn made their first contribution in [#1035](https://github.com/dessalines/thumb-key/pull/1035)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.4...3.4.5
+
+# Thumb-Key 3.4.4 (2024-08-30)
+
+## What's Changed in 3.4.4
+
+- Upping version. by @dessalines
+- add hyphen `-` to the first layer of FRThumbKeyV2.kt by @foldfree in [#1031](https://github.com/dessalines/thumb-key/pull/1031)
+- Adding en + sv + programmer layout. by @dessalines in [#1030](https://github.com/dessalines/thumb-key/pull/1030)
+
+## New Contributors
+
+- @foldfree made their first contribution in [#1031](https://github.com/dessalines/thumb-key/pull/1031)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.3...3.4.4
+
+# Thumb-Key 3.4.3 (2024-08-27)
+
+## What's Changed in 3.4.3
+
+- Upping version. by @dessalines
+- Added üÜ and ßẞ to DEMessagEaseNordic.kt, shifted ßẞ correctly in german keyboards by @MarvinBaral in [#1028](https://github.com/dessalines/thumb-key/pull/1028)
+
+## New Contributors
+
+- @MarvinBaral made their first contribution in [#1028](https://github.com/dessalines/thumb-key/pull/1028)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.2...3.4.3
+
+# Thumb-Key 3.4.2 (2024-08-26)
+
+## What's Changed in 3.4.2
+
+- Upping version. by @dessalines
+- Show emoji key while in Shift mode in Programmer Wide layout by @kidhanis in [#1018](https://github.com/dessalines/thumb-key/pull/1018)
+
+## New Contributors
+
+- @kidhanis made their first contribution in [#1018](https://github.com/dessalines/thumb-key/pull/1018)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.1...3.4.2
+
+# Thumb-Key 3.4.1 (2024-08-15)
+
+## What's Changed in 3.4.1
+
+- Upping version. by @dessalines
+- En/Ru MessagEasy Writer layouts by @Defrobe in [#1015](https://github.com/dessalines/thumb-key/pull/1015)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.4.0...3.4.1
+
+# Thumb-Key 3.4.0 (2024-08-09)
+
+## What's Changed in 3.4.0
+
+- Upping version. by @dessalines
+- #702 Rewrite titles of layouts to `[languages] [base] [qualifiers] [version]` by @mpsijm in [#1007](https://github.com/dessalines/thumb-key/pull/1007)
+- Create RUThumbKeyWriter.kt by @Defrobe in [#1005](https://github.com/dessalines/thumb-key/pull/1005)
+- Swipe-and-return gesture to capitalize words on EN Writer layout by @Defrobe in [#1004](https://github.com/dessalines/thumb-key/pull/1004)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.3.6...3.4.0
+
+# Thumb-Key 3.3.6 (2024-08-06)
+
+## What's Changed in 3.3.6
+
+- Upping version. by @dessalines
+- Fix european keyboard name. by @dessalines
+- Add layout: English MessagEase two-hands symbols by @mpsijm in [#1002](https://github.com/dessalines/thumb-key/pull/1002)
+- ESThumbKey.kt exclamation and question mark by @ZePotente in [#1001](https://github.com/dessalines/thumb-key/pull/1001)
+
+## New Contributors
+
+- @ZePotente made their first contribution in [#1001](https://github.com/dessalines/thumb-key/pull/1001)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.3.5...3.3.6
+
+# Thumb-Key 3.3.5 (2024-08-02)
+
+## What's Changed in 3.3.5
+
+- Upping version. by @dessalines
+- European Thumb-Key layout by @marekjm in [#998](https://github.com/dessalines/thumb-key/pull/998)
+- Adding simplified slovak layout, slovak thumbkey v3. by @dessalines in [#996](https://github.com/dessalines/thumb-key/pull/996)
+- Adding renovate automerge. by @dessalines
+
+## New Contributors
+
+- @marekjm made their first contribution in [#998](https://github.com/dessalines/thumb-key/pull/998)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.3.4...3.3.5
+
+# Thumb-Key 3.3.4 (2024-07-26)
+
+## What's Changed in 3.3.4
+
+- Upping version. by @dessalines
+- Adding DE + EN + AE keyboard. by @dessalines in [#991](https://github.com/dessalines/thumb-key/pull/991)
+- Adding screen transitions. by @dessalines in [#990](https://github.com/dessalines/thumb-key/pull/990)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.3.3...3.3.4
+
+# Thumb-Key 3.3.3 (2024-07-20)
+
+## What's Changed in 3.3.3
+
+- Upping version. by @dessalines
+- Farsi/Persian for Samsung devices by @Tirbod in [#984](https://github.com/dessalines/thumb-key/pull/984)
+- Merge hiragana and katakana by @K0baU in [#985](https://github.com/dessalines/thumb-key/pull/985)
+- Farsi/Persian Spacebar Multi-taps by @Tirbod in [#983](https://github.com/dessalines/thumb-key/pull/983)
+
+## New Contributors
+
+- @Tirbod made their first contribution in [#984](https://github.com/dessalines/thumb-key/pull/984)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.3.2...3.3.3
+
+# Thumb-Key 3.3.2 (2024-07-16)
+
+## What's Changed in 3.3.2
+
+- Upping version. by @dessalines
+- Fixed swipetype on EN Writer keyboard by @locrianz in [#977](https://github.com/dessalines/thumb-key/pull/977)
+- Fixed EN Writer keyboard by @locrianz in [#975](https://github.com/dessalines/thumb-key/pull/975)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.3.1...3.3.2
+
+# Thumb-Key 3.3.1 (2024-07-11)
+
+## What's Changed in 3.3.1
+
+- Upping version. by @dessalines
+- Added ENThumbKeyWriter layout by @locrianz in [#970](https://github.com/dessalines/thumb-key/pull/970)
+- Added swipe-and-return gesture to capitalize words (#964) by @gitterrost4 in [#966](https://github.com/dessalines/thumb-key/pull/966)
+- Adding dependenciesInfo for f-droid builds by @dessalines in [#965](https://github.com/dessalines/thumb-key/pull/965)
+
+## New Contributors
+
+- @gitterrost4 made their first contribution in [#966](https://github.com/dessalines/thumb-key/pull/966)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.3.0...3.3.1
+
+# Thumb-Key 3.3.0 (2024-07-07)
+
+## What's Changed in 3.3.0
+
+- Upping version. by @dessalines
+- Added ghost key functionality. by @matthew-sirman in [#961](https://github.com/dessalines/thumb-key/pull/961)
+- Add composed qwertyfour layout by @sirlan-ff00ff in [#962](https://github.com/dessalines/thumb-key/pull/962)
+
+## New Contributors
+
+- @matthew-sirman made their first contribution in [#961](https://github.com/dessalines/thumb-key/pull/961)
+- @sirlan-ff00ff made their first contribution in [#962](https://github.com/dessalines/thumb-key/pull/962)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.2.6...3.3.0
+
+# Thumb-Key 3.2.6 (2024-07-02)
+
+## What's Changed in 3.2.6
+
+- Upping version. by @dessalines
+- MessageEase layouts: use numerics from MessageEase too by @gmelikov in [#960](https://github.com/dessalines/thumb-key/pull/960)
+- RUMessagEaseSymbols: use messagease numerics by @gmelikov in [#959](https://github.com/dessalines/thumb-key/pull/959)
+
+## New Contributors
+
+- @gmelikov made their first contribution in [#960](https://github.com/dessalines/thumb-key/pull/960)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.2.5...3.2.6
+
+# Thumb-Key 3.2.5 (2024-06-29)
+
+## What's Changed in 3.2.5
+
+- Upping version. by @dessalines
+- Ignoring build.sh by @dessalines
+- Revert "Hebrew: added shifted layer using final letters" by @dessalines in [#958](https://github.com/dessalines/thumb-key/pull/958)
+- Removing renovate from git cliff by @dessalines in [#954](https://github.com/dessalines/thumb-key/pull/954)
+- Update layout english deutsch thumb-key v2 to fix #868 by @roomfullofcommits in [#955](https://github.com/dessalines/thumb-key/pull/955)
+
+## New Contributors
+
+- @roomfullofcommits made their first contribution in [#955](https://github.com/dessalines/thumb-key/pull/955)
+
+**Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.2.4...3.2.5
+
 # Thumb-Key 3.2.4 (2024-06-14)
 
 ## What's Changed in 3.2.4
 
-- Increasing gradle memory.
-- Update plugin com.android.application to v8.5.0 by @renovate[bot] in [#951](https://github.com/dessalines/thumb-key/pull/951)
-- Update plugin com.android.library to v8.5.0 by @renovate[bot] in [#952](https://github.com/dessalines/thumb-key/pull/952)
-- Update dependency androidx.compose:compose-bom to v2024.06.00 by @renovate[bot] in [#949](https://github.com/dessalines/thumb-key/pull/949)
-- Update dependency androidx.compose.material:material-icons-extended-desktop to v1.6.8 - autoclosed by @renovate[bot] in [#948](https://github.com/dessalines/thumb-key/pull/948)
+- Upping version. by @dessalines
+- Increasing gradle memory. by @dessalines
 - Per-app language preference by @pxeemo in [#947](https://github.com/dessalines/thumb-key/pull/947)
 
 **Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.2.3...3.2.4
@@ -16,10 +295,7 @@
 ## What's Changed in 3.2.3
 
 - Upping version. by @dessalines
-- Update plugin com.android.application to v8.4.2 by @renovate[bot] in [#945](https://github.com/dessalines/thumb-key/pull/945)
-- Update plugin com.android.library to v8.4.2 by @renovate[bot] in [#946](https://github.com/dessalines/thumb-key/pull/946)
 - Hebrew: added shifted layer using final letters by @yehoshuapw in [#944](https://github.com/dessalines/thumb-key/pull/944)
-- Update plugin com.google.devtools.ksp to v2.0.0-1.0.22 by @renovate[bot] in [#942](https://github.com/dessalines/thumb-key/pull/942)
 - DEThumbKey keyboard: Fixes exclamation mark. by @sphh in [#941](https://github.com/dessalines/thumb-key/pull/941)
 
 **Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.2.2...3.2.3
@@ -32,13 +308,13 @@
 - Force LTR KeyboardScreen by @pxeemo in [#940](https://github.com/dessalines/thumb-key/pull/940)
 - add DEThumbkeySymbols by @Ingegneus in [#939](https://github.com/dessalines/thumb-key/pull/939)
 - Add letter K to "Italiano type-split" keyboard by @DvCCC66 in [#938](https://github.com/dessalines/thumb-key/pull/938)
-- Fix "latest version" links in issue forms by @StevenH237 in [#936](https://github.com/dessalines/thumb-key/pull/936)
+- Fix "latest version" links in issue forms by @Nixill in [#936](https://github.com/dessalines/thumb-key/pull/936)
 
 ## New Contributors
 
 - @Ingegneus made their first contribution in [#939](https://github.com/dessalines/thumb-key/pull/939)
 - @DvCCC66 made their first contribution in [#938](https://github.com/dessalines/thumb-key/pull/938)
-- @StevenH237 made their first contribution in [#936](https://github.com/dessalines/thumb-key/pull/936)
+- @Nixill made their first contribution in [#936](https://github.com/dessalines/thumb-key/pull/936)
 
 **Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.2.1...3.2.2
 
@@ -48,10 +324,7 @@
 
 - Upping version. by @dessalines
 - Adding a few more compose-boms. by @dessalines in [#934](https://github.com/dessalines/thumb-key/pull/934)
-- Update dependency gradle to v8.8 by @renovate[bot] in [#933](https://github.com/dessalines/thumb-key/pull/933)
 - Fix errors in CZProgrammerMessagEase by @ondrachwiedziuk in [#932](https://github.com/dessalines/thumb-key/pull/932)
-- Update dependency androidx.appcompat:appcompat to v1.7.0 - autoclosed by @renovate[bot] in [#931](https://github.com/dessalines/thumb-key/pull/931)
-- Update dependency androidx.lifecycle:lifecycle-runtime-compose to v2.8.1 by @renovate[bot] in [#930](https://github.com/dessalines/thumb-key/pull/930)
 
 **Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.2.0...3.2.1
 
@@ -73,7 +346,6 @@
 
 - Upping version. by @dessalines
 - Enable strong skipping. by @dessalines in [#925](https://github.com/dessalines/thumb-key/pull/925)
-- Update plugin org.jetbrains.kotlin.android to v2 by @renovate[bot] in [#924](https://github.com/dessalines/thumb-key/pull/924)
 - Removing renovate schedule. by @dessalines in [#923](https://github.com/dessalines/thumb-key/pull/923)
 - Upgrading to 2.0.0 compiler. by @dessalines in [#922](https://github.com/dessalines/thumb-key/pull/922)
 
@@ -85,17 +357,14 @@
 
 - Upping version. by @dessalines
 - Revert "Update plugin org.jetbrains.kotlin.android to v2" by @dessalines in [#921](https://github.com/dessalines/thumb-key/pull/921)
-- Update plugin org.jetbrains.kotlin.android to v2 by @renovate[bot] in [#920](https://github.com/dessalines/thumb-key/pull/920)
-- Update plugin com.android.application to v8.4.1 by @renovate[bot] in [#918](https://github.com/dessalines/thumb-key/pull/918)
 - Make cursor movement detection index-based (fixes #881) by @glm4610 in [#917](https://github.com/dessalines/thumb-key/pull/917)
 - Fix #304 (take two): In Utils.autoCapitalizeCheck, use input type of current editor by @mpsijm in [#909](https://github.com/dessalines/thumb-key/pull/909)
-- Update plugin com.android.library to v8.4.1 by @renovate[bot] in [#908](https://github.com/dessalines/thumb-key/pull/908)
 - Fixing donation line. by @dessalines in [#906](https://github.com/dessalines/thumb-key/pull/906)
-- Add QBased a qwerty based keyboard by @APainfulMemory in [#905](https://github.com/dessalines/thumb-key/pull/905)
+- Add QBased a qwerty based keyboard by @AWillfulMemory in [#905](https://github.com/dessalines/thumb-key/pull/905)
 
 ## New Contributors
 
-- @APainfulMemory made their first contribution in [#905](https://github.com/dessalines/thumb-key/pull/905)
+- @AWillfulMemory made their first contribution in [#905](https://github.com/dessalines/thumb-key/pull/905)
 
 **Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.1.7...3.1.8
 
@@ -105,13 +374,6 @@
 
 - Upping version. by @dessalines
 - Tweak circular drag detection algorithm (fixes #894) by @glm4610 in [#904](https://github.com/dessalines/thumb-key/pull/904)
-- Update plugin com.google.devtools.ksp to v1.9.24-1.0.20 by @renovate[bot] in [#897](https://github.com/dessalines/thumb-key/pull/897)
-- Update dependency composeOptions to v1.5.14 by @renovate[bot] in [#896](https://github.com/dessalines/thumb-key/pull/896)
-- Update plugin org.jetbrains.kotlin.android to v1.9.24 by @renovate[bot] in [#898](https://github.com/dessalines/thumb-key/pull/898)
-- Update cimg/android Docker tag to v2024 by @renovate[bot] in [#903](https://github.com/dessalines/thumb-key/pull/903)
-- Update plugin com.android.application to v8.4.0 by @renovate[bot] in [#901](https://github.com/dessalines/thumb-key/pull/901)
-- Update plugin com.android.library to v8.4.0 by @renovate[bot] in [#902](https://github.com/dessalines/thumb-key/pull/902)
-- Update dependency com.github.jeziellago:compose-markdown to v0.5.0 by @renovate[bot] in [#900](https://github.com/dessalines/thumb-key/pull/900)
 - Adding renovate. by @dessalines
 - Improves symbols in main DEThumbKey keyboard. by @sphh in [#892](https://github.com/dessalines/thumb-key/pull/892)
 
@@ -207,7 +469,6 @@
 ## New Contributors
 
 - @feathecutie made their first contribution in [#854](https://github.com/dessalines/thumb-key/pull/854)
-- @kkard2 made their first contribution in [#851](https://github.com/dessalines/thumb-key/pull/851)
 
 **Full Changelog**: https://github.com/dessalines/thumb-key/compare/3.0.0...3.1.0
 
@@ -393,7 +654,7 @@
 ## What's Changed in 2.6.21
 
 - Upping version. by @dessalines
-- Create english latina thumb-key by @MGreek in [#773](https://github.com/dessalines/thumb-key/pull/773)
+- Create english latina thumb-key in [#773](https://github.com/dessalines/thumb-key/pull/773)
 - Rename MessageEase to MessagEase. Fixes #769 by @dessalines in [#771](https://github.com/dessalines/thumb-key/pull/771)
 - Improved Hungarian Type-split swipemaps by @KnockoffFeline in [#770](https://github.com/dessalines/thumb-key/pull/770)
 
@@ -405,7 +666,7 @@
 
 - Upping version. by @dessalines
 - Remove up down spacebar swipes. Fixes #766 by @dessalines in [#768](https://github.com/dessalines/thumb-key/pull/768)
-- Create english română thumb-key by @MGreek in [#767](https://github.com/dessalines/thumb-key/pull/767)
+- Create english română thumb-key in [#767](https://github.com/dessalines/thumb-key/pull/767)
 - Fixed Hungarian Type-split layout by @KnockoffFeline in [#764](https://github.com/dessalines/thumb-key/pull/764)
 
 **Full Changelog**: https://github.com/dessalines/thumb-key/compare/2.6.19...2.6.20

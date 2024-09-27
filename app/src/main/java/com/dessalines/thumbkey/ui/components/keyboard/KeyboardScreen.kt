@@ -39,6 +39,7 @@ import com.dessalines.thumbkey.db.DEFAULT_CIRCULAR_DRAG_ENABLED
 import com.dessalines.thumbkey.db.DEFAULT_CLOCKWISE_DRAG_ACTION
 import com.dessalines.thumbkey.db.DEFAULT_COUNTERCLOCKWISE_DRAG_ACTION
 import com.dessalines.thumbkey.db.DEFAULT_DRAG_RETURN_ENABLED
+import com.dessalines.thumbkey.db.DEFAULT_GHOST_KEYS_ENABLED
 import com.dessalines.thumbkey.db.DEFAULT_HIDE_LETTERS
 import com.dessalines.thumbkey.db.DEFAULT_HIDE_SYMBOLS
 import com.dessalines.thumbkey.db.DEFAULT_KEYBOARD_LAYOUT
@@ -143,6 +144,7 @@ fun KeyboardScreen(
     val clockwiseDragAction = CircularDragAction.entries[settings?.clockwiseDragAction ?: DEFAULT_CLOCKWISE_DRAG_ACTION]
     val counterclockwiseDragAction =
         CircularDragAction.entries[settings?.counterclockwiseDragAction ?: DEFAULT_COUNTERCLOCKWISE_DRAG_ACTION]
+    val ghostKeysEnabled = (settings?.ghostKeysEnabled ?: DEFAULT_GHOST_KEYS_ENABLED).toBool()
 
     val keyBorderWidthFloat = keyBorderWidth / 10.0f
     val keyBorderColour = MaterialTheme.colorScheme.outline
@@ -207,8 +209,7 @@ fun KeyboardScreen(
                                 } else {
                                     (Modifier)
                                 },
-                            )
-                            .background(MaterialTheme.colorScheme.surface),
+                            ).background(MaterialTheme.colorScheme.surface),
                 ) {
                     val view = LocalView.current
                     val audioManager = ctx.getSystemService(Context.AUDIO_SERVICE) as AudioManager
@@ -363,8 +364,19 @@ fun KeyboardScreen(
                     Row {
                         row.forEachIndexed { j, key ->
                             Column {
+                                val ghostKey =
+                                    if (ghostKeysEnabled) {
+                                        when (mode) {
+                                            KeyboardMode.MAIN -> keyboardDefinition.modes.numeric
+                                            KeyboardMode.SHIFTED -> keyboardDefinition.modes.numeric
+                                            else -> null
+                                        }?.arr?.getOrNull(i)?.getOrNull(j)
+                                    } else {
+                                        null
+                                    }
                                 KeyboardKey(
                                     key = key,
+                                    ghostKey = ghostKey,
                                     lastAction = lastAction,
                                     legendHeight = legendHeight,
                                     legendWidth = legendWidth,
@@ -443,7 +455,8 @@ fun KeyboardScreen(
                                         when (mode) {
                                             KeyboardMode.MAIN, KeyboardMode.SHIFTED ->
                                                 keyboardDefinition.modes.numeric.arr
-                                                    .getOrNull(i)?.getOrNull(j)
+                                                    .getOrNull(i)
+                                                    ?.getOrNull(j)
                                             else -> null
                                         },
                                     dragReturnEnabled = dragReturnEnabled,
