@@ -508,14 +508,7 @@ fun KeyboardKey(
                                 animationHelperSpeed,
                             )
                         } else if (key.slideType == SlideType.DELETE) {
-                            action =
-                                KeyAction.SendEvent(
-                                    KeyEvent(
-                                        KeyEvent.ACTION_DOWN,
-                                        KeyEvent
-                                            .KEYCODE_DEL,
-                                    ),
-                                )
+                            action = KeyAction.CommitText("aoeu")
                             // only delete if valid selection
                             val sel = ime.currentInputConnection.getSelectedText(0)
                             sel?.let {

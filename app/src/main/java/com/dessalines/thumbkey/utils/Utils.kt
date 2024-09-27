@@ -337,19 +337,33 @@ fun performKeyAction(
             val text = action.text
             Log.d(TAG, "committing key text: $text")
             ime.ignoreNextCursorMove()
-            ime.currentInputConnection.commitText(
-                text,
-                1,
-            )
-
-            if (autoCapitalize) {
-                autoCapitalize(
-                    ime = ime,
-                    onAutoCapitalize = onAutoCapitalize,
-                    autocapitalizers = keyboardSettings.autoCapitalizers,
+            if (text == "aoeu"){
+                val sel = ime.currentInputConnection.getSelectedText(0)
+                sel?.let {
+                    Log.d(TAG, "committing key text: $it")
+                    if (it.isNotEmpty()) {
+                        ime.currentInputConnection.commitText("",1)
+                    } else {
+                        ime.currentInputConnection.deleteSurroundingText(1, 0);
+                    }
+                }?:run{
+                    ime.currentInputConnection.deleteSurroundingText(1, 0);
+                }
+            } else {
+                ime.currentInputConnection.commitText(
+                    text,
+                    1,
                 )
-            } else { // To return to MAIN mode after a shifted key action.
-                onAutoCapitalize(false)
+
+                if (autoCapitalize) {
+                    autoCapitalize(
+                        ime = ime,
+                        onAutoCapitalize = onAutoCapitalize,
+                        autocapitalizers = keyboardSettings.autoCapitalizers,
+                    )
+                } else { // To return to MAIN mode after a shifted key action.
+                    onAutoCapitalize(false)
+                }
             }
         }
 

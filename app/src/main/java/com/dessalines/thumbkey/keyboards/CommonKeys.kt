@@ -169,14 +169,7 @@ val BACKSPACE_KEY_ITEM =
         center =
             KeyC(
                 display = KeyDisplay.IconDisplay(Icons.AutoMirrored.Outlined.KeyboardBackspace),
-                action =
-                    KeyAction.SendEvent(
-                        KeyEvent(
-                            KeyEvent.ACTION_DOWN,
-                            KeyEvent
-                                .KEYCODE_DEL,
-                        ),
-                    ),
+                action = KeyAction.CommitText("aoeu"),
                 size = FontSizeVariant.LARGE,
                 color = ColorVariant.SECONDARY,
             ),
