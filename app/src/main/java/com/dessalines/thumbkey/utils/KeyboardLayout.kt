@@ -15,7 +15,6 @@ import com.dessalines.thumbkey.keyboards.KB_DE_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_DE_THUMBKEY_MULTILINGUAL
 import com.dessalines.thumbkey.keyboards.KB_DE_THUMBKEY_SYMBOLS
 import com.dessalines.thumbkey.keyboards.KB_DE_TYPESPLIT
-import com.dessalines.thumbkey.keyboards.KB_ENEO_MESSAGEASE_SYMBOLS
 import com.dessalines.thumbkey.keyboards.KB_EN_CODY
 import com.dessalines.thumbkey.keyboards.KB_EN_COLUMNAR
 import com.dessalines.thumbkey.keyboards.KB_EN_COLUMNAR_QUICK
